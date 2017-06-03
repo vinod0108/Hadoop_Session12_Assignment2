@@ -1,0 +1,27 @@
+1. How are worker, executor and task related to each other?
+   Worker t is responsible to spawnthe executors(one or more)
+   executor runs the tasks (one or multiple) in threads .
+
+2. What are the key features of Spark?
+    Rich API
+    Resilient Distributed Datasets (RDD)
+    DAG based execution
+    Data caching (In-Memory Processing)
+    Strong ecosystem tool support
+    Unified platform
+
+3. What is Spark Driver?
+   It connects to the cluster manager to allocate the resources to the applications, run the executors on the node.
+
+4. What are the benefits of Spark over MapReduce?
+    It is less disk intensive, 
+    in memory processing, 
+    all the problems need not be broken down to map and reduces
+    processing is fast 
+    Spark is a framework with Scheduling, Monitoring and Distributing applications
+    Spark is a General Unified Engine which can replace many specialized systems
+            like mahout, tez, Graphlab, Storm etc.
+
+5. What is Spark Executor?
+    Executors run task 
+    Execute one or more task using threads in a ThreadPool
